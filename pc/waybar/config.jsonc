@@ -9,7 +9,6 @@
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/submap",
-        "sway/scratchpad",
         "custom/media"
     ],
     "modules-center": [
@@ -17,16 +16,13 @@
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
         "pulseaudio",
         "network",
         "cpu",
         "memory",
-        "keyboard-state",
-        "sway/language",
         "clock",
-        "tray",
-        "custom/power"
+        "tray"
+        //"custom/power"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -103,7 +99,8 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        //"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%I:%M %p}",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
@@ -181,7 +178,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "alsamixer"
     },
     "custom/media": {
         "format": "{icon} {}",
